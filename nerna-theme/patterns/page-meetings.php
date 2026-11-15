@@ -53,7 +53,13 @@
 <h3 class="wp-block-heading">On your phone</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Use the free NA Meeting Search app, or call the helpline and a member will help you.</p>
+<p>Get <strong>NA Meetings Near Me</strong>, a free app that shows the NA meetings starting soonest near you. Or call the helpline and a member will help you.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
+<p class="is-style-nerna-arrow"><a href="https://apps.apple.com/us/app/na-meetings-near-me/id6803261235">iPhone: App Store</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
+<p class="is-style-nerna-arrow"><a href="https://play.google.com/store/apps/details?id=app.na.meetingsnearme">Android: Google Play</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
