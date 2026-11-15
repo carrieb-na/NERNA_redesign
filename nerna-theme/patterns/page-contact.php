@@ -58,7 +58,7 @@
 <h3 class="wp-block-heading">Neighboring NA</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p><a href="https://ctna.org">Connecticut Region</a> · <a href="https://namaine.org">Maine</a> · <a href="https://nezf.org">Northeast Zonal Forum</a> · <a href="https://na.org">NA World Services</a></p>
+<p><a href="https://ctna.org" target="_blank" rel="noreferrer noopener">Connecticut Region</a> · <a href="https://namaine.org" target="_blank" rel="noreferrer noopener">Maine</a> · <a href="https://nezf.org" target="_blank" rel="noreferrer noopener">Northeast Zonal Forum</a> · <a href="https://na.org" target="_blank" rel="noreferrer noopener">NA World Services</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

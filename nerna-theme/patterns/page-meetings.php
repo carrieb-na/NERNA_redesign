@@ -56,10 +56,10 @@
 <p>Get <strong>NA Meetings Near Me</strong>, a free app that shows the NA meetings starting soonest near you. Or call the helpline and a member will help you.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
-<p class="is-style-nerna-arrow"><a href="https://apps.apple.com/us/app/na-meetings-near-me/id6803261235">iPhone: App Store</a></p>
+<p class="is-style-nerna-arrow"><a href="https://apps.apple.com/us/app/na-meetings-near-me/id6803261235" target="_blank" rel="noreferrer noopener">iPhone: App Store</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
-<p class="is-style-nerna-arrow"><a href="https://play.google.com/store/apps/details?id=app.na.meetingsnearme">Android: Google Play</a></p>
+<p class="is-style-nerna-arrow"><a href="https://play.google.com/store/apps/details?id=app.na.meetingsnearme" target="_blank" rel="noreferrer noopener">Android: Google Play</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -96,7 +96,7 @@
 <p>For Connecticut, northern New England or anywhere else, use the worldwide search.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
-<p class="is-style-nerna-arrow"><a href="https://na.org/meetingsearch/">na.org meeting search</a></p>
+<p class="is-style-nerna-arrow"><a href="https://na.org/meetingsearch/" target="_blank" rel="noreferrer noopener">na.org meeting search</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

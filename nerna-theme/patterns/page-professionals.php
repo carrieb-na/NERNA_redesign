@@ -57,7 +57,7 @@
 <p>Informational pamphlets and meeting lists for your waiting room or caseload.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
-<p class="is-style-nerna-arrow"><a href="https://na.org/ips/">Pamphlets at na.org</a></p>
+<p class="is-style-nerna-arrow"><a href="https://na.org/ips/" target="_blank" rel="noreferrer noopener">Pamphlets at na.org</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

@@ -115,7 +115,7 @@
 <!-- /wp:details -->
 <!-- wp:details -->
 <details class="wp-block-details"><summary>World Service Conference (CAR / CAT)</summary><!-- wp:paragraph -->
-<p>The Conference Agenda Report, Conference Approval Track material, workshop dates, and how the region gathers group conscience. <a href="https://na.org/conference/">Conference materials at na.org</a></p>
+<p>The Conference Agenda Report, Conference Approval Track material, workshop dates, and how the region gathers group conscience. <a href="https://na.org/conference/" target="_blank" rel="noreferrer noopener">Conference materials at na.org</a></p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 <!-- wp:details -->

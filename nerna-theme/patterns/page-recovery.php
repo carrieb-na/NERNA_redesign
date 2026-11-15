@@ -31,7 +31,7 @@
 <p>Today&#8217;s meditation from NA World Services.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
-<p class="is-style-nerna-arrow"><a href="https://na.org/daily-meditations/just-for-today/">Read today&#8217;s</a></p>
+<p class="is-style-nerna-arrow"><a href="https://na.org/daily-meditations/just-for-today/" target="_blank" rel="noreferrer noopener">Read today&#8217;s</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"is-style-nerna-card-gold","layout":{"type":"default"}} -->
@@ -45,7 +45,7 @@
 <p>A daily reflection on one spiritual principle.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
-<p class="is-style-nerna-arrow"><a href="https://na.org/daily-meditations/spiritual-principle-a-day/">Read today&#8217;s</a></p>
+<p class="is-style-nerna-arrow"><a href="https://na.org/daily-meditations/spiritual-principle-a-day/" target="_blank" rel="noreferrer noopener">Read today&#8217;s</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"is-style-nerna-card-gold","layout":{"type":"default"}} -->
@@ -59,7 +59,7 @@
 <p>Informational pamphlets you can read free, including the Steps and Traditions.</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
-<p class="is-style-nerna-arrow"><a href="https://na.org/ips/">Browse at na.org</a></p>
+<p class="is-style-nerna-arrow"><a href="https://na.org/ips/" target="_blank" rel="noreferrer noopener">Browse at na.org</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
