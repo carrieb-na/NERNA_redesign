@@ -10,6 +10,10 @@ The link builds a complete WordPress site in your web browser, using WordPress P
 
 The demo always uses the newest version of the theme in this repository.
 
+**Two tips for the demo:**
+- Open the link in a **private window** (Ctrl+Shift+N) to be sure you see the newest version. Playground saves a copy in your browser and may show an older one otherwise. Close all private windows before opening a new one.
+- Links to other websites (printable meeting lists, area websites, na.org) can't open inside the demo, so **right-click them and choose "Open link in new tab."** On the real nerna.org they open normally.
+
 ## The design
 
 Each part of the site borrows the look of an NA book, with the NA symbols where they appear on the covers:
