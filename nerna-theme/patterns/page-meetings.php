@@ -26,7 +26,7 @@
 <p class="is-style-nerna-note"><strong>For the website team:</strong> the meeting search below comes live from the NERNA meeting server (BMLT) that the areas already keep up to date. No meeting data has to move.</p>
 <!-- /wp:paragraph -->
 <!-- wp:shortcode -->
-[bmlt_tabs root_server="https://nerna.org/main_server"]
+[bmlt_tabs root_server="https://nerna.org/main_server" service_body="2,3,4,6,8,9,10,11,13,14,15"]
 <!-- /wp:shortcode -->
 <!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"16rem"},"className":"nerna-grid"} -->
 <div class="wp-block-group nerna-grid"><!-- wp:group {"className":"is-style-nerna-card","layout":{"type":"default"}} -->
