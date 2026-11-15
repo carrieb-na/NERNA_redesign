@@ -34,7 +34,7 @@
 <p class="is-style-nerna-arrow"><a href="/online-meetings/">Online meetings in our region</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
-<p class="is-style-nerna-arrow"><a href="https://virtual-na.org/">Online NA meetings worldwide</a></p>
+<p class="is-style-nerna-arrow"><a href="/online-meetings/?view=worldwide#meetings-list">Online NA meetings worldwide</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"is-style-nerna-card","layout":{"type":"default"}} -->

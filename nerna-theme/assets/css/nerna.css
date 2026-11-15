@@ -292,3 +292,8 @@ ol.nerna-steps li::before { content: counter(s); position: absolute; left: 1rem;
 	.is-style-nerna-basic-text::after { width: 90px; height: 90px; top: 33px; background: url(../img/na-logo-white.svg) center / 74px no-repeat, radial-gradient(circle at center, var(--n-blue) 0 39px, transparent 40px); }
 	.is-style-nerna-basic-text, .is-style-nerna-basic-text.nerna-short { padding-top: 132px !important; }
 }
+
+/* View switch buttons (Online Meetings: In our region / Worldwide) */
+.nerna-toggle { gap: .5rem !important; scroll-margin-top: 140px; }
+.nerna-toggle .wp-block-button__link { background: #fff; color: var(--n-blue); border: 2px solid var(--n-blue); }
+.nerna-toggle .is-active .wp-block-button__link { background: var(--n-blue); color: #fff; }

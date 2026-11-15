@@ -87,3 +87,43 @@ add_action( 'init', function () {
 function nerna_img( $file ) {
 	return esc_url( get_theme_file_uri( 'assets/img/' . $file ) );
 }
+
+/**
+ * Switchable views on one page (used by Online Meetings: "In our region" / "Worldwide").
+ *
+ * How it works for editors:
+ * - Put each view in a Group block and give it the extra CSS class "nerna-view-NAME"
+ *   (add "nerna-view-default" to the one shown first).
+ * - Add buttons with the class "nerna-toggle-NAME" linking to "?view=NAME".
+ * Only the chosen view is built, so two meeting lists never load on the same page.
+ */
+function nerna_current_view() {
+	return isset( $_GET['view'] ) ? sanitize_key( wp_unslash( $_GET['view'] ) ) : '';
+}
+
+add_filter( 'pre_render_block', function ( $pre, $block ) {
+	$class = isset( $block['attrs']['className'] ) ? $block['attrs']['className'] : '';
+	if ( ! preg_match( '/\bnerna-view-(?!default\b)([a-z0-9-]+)/', $class, $m ) ) {
+		return $pre;
+	}
+	$view       = nerna_current_view();
+	$is_default = (bool) preg_match( '/\bnerna-view-default\b/', $class );
+	$show       = '' === $view ? $is_default : ( $view === $m[1] );
+	return $show ? $pre : '';
+}, 10, 2 );
+
+add_filter( 'render_block', function ( $content, $block ) {
+	$class = isset( $block['attrs']['className'] ) ? $block['attrs']['className'] : '';
+	if ( 'core/button' !== $block['blockName'] || ! preg_match( '/\bnerna-toggle-([a-z0-9-]+)/', $class, $m ) ) {
+		return $content;
+	}
+	$view = nerna_current_view();
+	if ( '' === $view ) {
+		$view = 'region';
+	}
+	if ( $view === $m[1] ) {
+		$content = preg_replace( '/class="wp-block-button /', 'class="wp-block-button is-active ', $content, 1 );
+		$content = str_replace( '<a class="wp-block-button__link', '<a aria-current="true" class="wp-block-button__link', $content );
+	}
+	return $content;
+}, 10, 2 );
