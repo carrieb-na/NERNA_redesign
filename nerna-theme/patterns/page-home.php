@@ -11,7 +11,7 @@
 <!-- wp:group {"align":"full","className":"is-style-nerna-basic-text","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-nerna-basic-text"><!-- wp:group {"className":"nerna-inner","layout":{"type":"default"}} -->
 <div class="wp-block-group nerna-inner"><!-- wp:paragraph {"className":"is-style-nerna-eyebrow"} -->
-<p class="is-style-nerna-eyebrow">Massachusetts · Rhode Island · Martha&#8217;s Vineyard · Nantucket</p>
+<p class="is-style-nerna-eyebrow">New England Region of Narcotics Anonymous · Massachusetts · Rhode Island</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading">You are<br><span class="nerna-outline">welcome here.</span></h1>
