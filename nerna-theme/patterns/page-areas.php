@@ -68,7 +68,7 @@
 <p><strong>Serves:</strong> Worcester and Central Massachusetts<br><strong>Area service meeting:</strong> 1st Monday, 6:30 pm · Greendale People&#8217;s Church, 25 Francis St, Worcester</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/?current-meeting-list=4" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="http://centralmassna.org/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="https://centralmassna.org/?current-meeting-list=1" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="http://centralmassna.org/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
