@@ -22,19 +22,13 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"nerna-section","layout":{"type":"default"}} -->
-<div class="wp-block-group nerna-section"><!-- wp:paragraph {"className":"is-style-nerna-note"} -->
-<p class="is-style-nerna-note"><strong>For the website team:</strong> the meeting search below comes live from the NERNA meeting server (BMLT) that the areas already keep up to date. No meeting data has to move.</p>
-<!-- /wp:paragraph -->
-<!-- wp:shortcode -->
-[bmlt_tabs root_server="https://nerna.org/main_server" service_body="2,3,4,6,8,9,10,11,13,14,15"]
-<!-- /wp:shortcode -->
-<!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"16rem"},"className":"nerna-grid"} -->
+<div class="wp-block-group nerna-section"><!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"16rem"},"className":"nerna-grid"} -->
 <div class="wp-block-group nerna-grid"><!-- wp:group {"className":"is-style-nerna-card","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-nerna-card"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Online meetings</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Join from anywhere by video or phone. Choose &#8220;Online&#8221; in the search.</p>
+<p>Join from anywhere by video or phone. Choose &#8220;Online&#8221; in the search below.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"is-style-nerna-card","layout":{"type":"default"}} -->
@@ -93,5 +87,14 @@
 <p class="is-style-nerna-arrow"><a href="https://na.org/meetingsearch/">na.org meeting search</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- wp:heading {"className":"nerna-meetings-heading"} -->
+<h2 class="wp-block-heading nerna-meetings-heading">All meetings in the region</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"className":"is-style-nerna-note"} -->
+<p class="is-style-nerna-note"><strong>For the website team:</strong> this list comes live from the NERNA meeting server (BMLT) that the areas already keep up to date. No meeting data has to move.</p>
+<!-- /wp:paragraph -->
+<!-- wp:shortcode -->
+[bmlt_tabs root_server="https://nerna.org/main_server" service_body="2,3,4,6,8,9,10,11,13,14,15"]
+<!-- /wp:shortcode --></div>
 <!-- /wp:group -->
