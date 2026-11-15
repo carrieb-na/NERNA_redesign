@@ -36,7 +36,7 @@
 <h3 class="wp-block-heading">Submit an event</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Event details and flyer. Goes to the website team for review.</p>
+<p>Event details and flyer. Goes to the website team for review. <a href="/submit-an-event/">Open the form</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"is-style-nerna-card-blue","layout":{"type":"default"}} -->

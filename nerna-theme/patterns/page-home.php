@@ -87,49 +87,11 @@
 <!-- wp:group {"align":"full","className":"is-style-nerna-paper","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-nerna-paper"><!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading -->
-<h2 class="wp-block-heading">What&#8217;s <span class="nerna-script">happening</span> in the region <span class="nerna-sample">SAMPLE</span></h2>
+<h2 class="wp-block-heading">What&#8217;s <span class="nerna-script">happening</span> in the region</h2>
 <!-- /wp:heading -->
-<!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"20rem"},"className":"nerna-grid-wide"} -->
-<div class="wp-block-group nerna-grid-wide"><!-- wp:group {"className":"is-style-nerna-event nerna-fellowship","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group is-style-nerna-event nerna-fellowship"><!-- wp:paragraph {"className":"is-style-nerna-date"} -->
-<p class="is-style-nerna-date"><strong>21</strong>Nov</p>
-<!-- /wp:paragraph -->
-<!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Gratitude Speaker Jam</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Worcester</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-<!-- wp:group {"className":"is-style-nerna-event nerna-fellowship","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group is-style-nerna-event nerna-fellowship"><!-- wp:paragraph {"className":"is-style-nerna-date"} -->
-<p class="is-style-nerna-date"><strong>26</strong>Nov</p>
-<!-- /wp:paragraph -->
-<!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Thanksgiving Marathon Meeting</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Online and in person</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-<!-- wp:group {"className":"is-style-nerna-event nerna-service","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group is-style-nerna-event nerna-service"><!-- wp:paragraph {"className":"is-style-nerna-date"} -->
-<p class="is-style-nerna-date"><strong>6</strong>Dec</p>
-<!-- /wp:paragraph -->
-<!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">South Shore Area Service Committee</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Hanson (hybrid)</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
+<!-- wp:shortcode -->
+[mayo_event_list per_page="3" infinite_scroll="false" time_format="12hour"]
+<!-- /wp:shortcode -->
 <!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
 <p class="is-style-nerna-arrow"><a href="/events/">All events and service meetings</a></p>
 <!-- /wp:paragraph --></div>
