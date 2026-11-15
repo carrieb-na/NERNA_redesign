@@ -67,9 +67,12 @@ body { overflow-x: hidden; }
 	content: ""; position: absolute; left: 0; right: 0; top: 74px; height: 7px; background: #fff; z-index: 1;
 }
 .is-style-nerna-basic-text::after { /* NA logo sitting on the rule */
-	content: ""; position: absolute; z-index: 1; top: 26px; left: var(--n-left);
-	width: 104px; height: 104px; border-radius: 50%;
-	background: var(--n-blue) url(../img/na-logo-white.svg) center / 88px no-repeat;
+	content: ""; position: absolute; z-index: 1; top: 22px; left: var(--n-left);
+	width: 112px; height: 112px;
+	/* Blue disc sits behind the logo (not a clipped circle) so the ® mark stays visible */
+	background:
+		url(../img/na-logo-white.svg) center / 92px no-repeat,
+		radial-gradient(circle at center, var(--n-blue) 0 48px, transparent 49px);
 }
 .is-style-nerna-basic-text h1, .is-style-nerna-basic-text h2, .is-style-nerna-basic-text h3 { color: #fff; }
 .is-style-nerna-basic-text h1 { font-weight: 800; letter-spacing: -.02em; line-height: 1.04; }
@@ -286,6 +289,6 @@ ol.nerna-steps li::before { content: counter(s); position: absolute; left: 1rem;
 /* Side padding for full-width headers and bands on small screens */
 [class*="is-style-nerna-"].alignfull, .nerna-helpbar, .nerna-header, .nerna-footer { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
 @media (max-width: 600px) {
-	.is-style-nerna-basic-text::after { width: 84px; height: 84px; background-size: 70px; top: 30px; }
+	.is-style-nerna-basic-text::after { width: 90px; height: 90px; top: 33px; background: url(../img/na-logo-white.svg) center / 74px no-repeat, radial-gradient(circle at center, var(--n-blue) 0 39px, transparent 40px); }
 	.is-style-nerna-basic-text, .is-style-nerna-basic-text.nerna-short { padding-top: 132px !important; }
 }
