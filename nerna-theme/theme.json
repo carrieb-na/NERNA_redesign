@@ -1,0 +1,84 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": { "contentSize": "1140px", "wideSize": "1240px" },
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{ "slug": "bt-blue", "name": "Basic Text blue", "color": "#0b4ea2" },
+				{ "slug": "bt-ink", "name": "Basic Text dark blue", "color": "#062b5c" },
+				{ "slug": "lc-sky", "name": "Living Clean sky", "color": "#5c9fd6" },
+				{ "slug": "lc-pale", "name": "Living Clean pale", "color": "#eaf3fb" },
+				{ "slug": "lc-orange", "name": "Living Clean orange", "color": "#e8862a" },
+				{ "slug": "spad-cream", "name": "Spiritual Principle cream", "color": "#f5efe2" },
+				{ "slug": "spad-red", "name": "Spiritual Principle red", "color": "#d9342b" },
+				{ "slug": "spad-ink", "name": "Spiritual Principle black", "color": "#1c1b1a" },
+				{ "slug": "gp-navy", "name": "Guiding Principles navy", "color": "#13294b" },
+				{ "slug": "gp-teal", "name": "Guiding Principles teal", "color": "#1aa3b8" },
+				{ "slug": "gp-green", "name": "Guiding Principles green", "color": "#8cc63f" },
+				{ "slug": "iw-ochre", "name": "It Works ochre", "color": "#8e6127" },
+				{ "slug": "iw-green", "name": "It Works green", "color": "#023a25" },
+				{ "slug": "iw-gold", "name": "It Works gold", "color": "#c9963e" },
+				{ "slug": "ink", "name": "Text", "color": "#16202e" },
+				{ "slug": "muted", "name": "Soft text", "color": "#566273" },
+				{ "slug": "line", "name": "Line", "color": "#dfe4ec" },
+				{ "slug": "bg", "name": "Page background", "color": "#fbfaf7" },
+				{ "slug": "white", "name": "White", "color": "#ffffff" }
+			]
+		},
+		"typography": {
+			"fluid": true,
+			"fontFamilies": [
+				{ "slug": "sans", "name": "Helvetica (Basic Text)", "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, system-ui, sans-serif" },
+				{ "slug": "josefin", "name": "Josefin (Living Clean)", "fontFamily": "\"Josefin Sans\", \"Helvetica Neue\", Arial, sans-serif" },
+				{ "slug": "lora", "name": "Lora (Spiritual Principle)", "fontFamily": "Lora, Georgia, serif" },
+				{ "slug": "script", "name": "Script (Spiritual Principle)", "fontFamily": "Parisienne, \"Brush Script MT\", cursive" },
+				{ "slug": "oswald", "name": "Oswald (Guiding Principles)", "fontFamily": "Oswald, \"Arial Narrow\", sans-serif" },
+				{ "slug": "marcellus", "name": "Marcellus (It Works)", "fontFamily": "\"Marcellus SC\", Optima, Candara, serif" }
+			],
+			"fontSizes": [
+				{ "slug": "small", "name": "Small", "size": "0.9rem" },
+				{ "slug": "medium", "name": "Medium", "size": "1.0625rem" },
+				{ "slug": "large", "name": "Large", "size": "1.2rem" },
+				{ "slug": "x-large", "name": "Extra large", "size": "1.6rem" },
+				{ "slug": "huge", "name": "Huge", "size": "clamp(2.2rem, 5vw, 3.6rem)" }
+			]
+		},
+		"spacing": {
+			"units": [ "px", "rem", "%", "vw" ],
+			"blockGap": true
+		}
+	},
+	"styles": {
+		"color": { "background": "var(--wp--preset--color--bg)", "text": "var(--wp--preset--color--ink)" },
+		"typography": { "fontFamily": "var(--wp--preset--font-family--sans)", "fontSize": "var(--wp--preset--font-size--medium)", "lineHeight": "1.6" },
+		"spacing": {
+			"blockGap": "1.2rem",
+			"padding": { "left": "1.25rem", "right": "1.25rem", "top": "0", "bottom": "0" }
+		},
+		"elements": {
+			"link": { "color": { "text": "var(--wp--preset--color--bt-blue)" } },
+			"heading": { "color": { "text": "var(--wp--preset--color--bt-ink)" }, "typography": { "fontWeight": "700", "lineHeight": "1.15" } },
+			"h1": { "typography": { "fontSize": "var(--wp--preset--font-size--huge)" } },
+			"h2": { "typography": { "fontSize": "1.5rem" } },
+			"h3": { "typography": { "fontSize": "1.15rem" } },
+			"button": {
+				"color": { "background": "var(--wp--preset--color--bt-blue)", "text": "#ffffff" },
+				"border": { "radius": "8px" },
+				"typography": { "fontWeight": "700", "fontSize": "1rem" },
+				"spacing": { "padding": { "top": "0.7rem", "bottom": "0.7rem", "left": "1.2rem", "right": "1.2rem" } }
+			}
+		}
+	},
+	"templateParts": [
+		{ "name": "header", "title": "Header", "area": "header" },
+		{ "name": "footer", "title": "Footer", "area": "footer" }
+	],
+	"customTemplates": [
+		{ "name": "page-titled", "title": "Page with title (no book header)", "postTypes": [ "page" ] }
+	]
+}

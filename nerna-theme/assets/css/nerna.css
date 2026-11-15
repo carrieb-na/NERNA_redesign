@@ -1,0 +1,291 @@
+/* ==========================================================================
+   NERNA theme styles
+   Page header looks come from NA literature covers:
+     Basic Text ........ royal blue, white rule, logo on the rule, outline type
+     Living Clean ...... sky-blue ribbons, orange/gold streaks, light type
+     Spiritual Principle cream paper, mid-century burst, script + serif
+     Guiding Principles  translucent teal/green circles, condensed caps
+     It Works .......... ochre band over forest green, gold small caps
+   ========================================================================== */
+
+:root {
+	--n-blue: #0b4ea2; --n-blue-deep: #073a7a; --n-ink: #062b5c;
+	--n-sky: #5c9fd6; --n-pale: #eaf3fb; --n-orange: #e8862a; --n-gold-lc: #f2b544; --n-lcnavy: #123f86;
+	--n-cream: #f5efe2; --n-red: #d9342b; --n-black: #1c1b1a; --n-spadblue: #5ea6c4;
+	--n-navy: #13294b; --n-teal: #1aa3b8; --n-green: #8cc63f; --n-sage: #6f8f30;
+	--n-ochre: #8e6127; --n-forest: #023a25; --n-gold: #c9963e; --n-goldlite: #e2bd77;
+	--n-text: #16202e; --n-muted: #566273; --n-line: #dfe4ec;
+	--n-r: 12px;
+	--n-shadow: 0 1px 2px rgba(10, 30, 60, .06), 0 6px 22px rgba(10, 30, 60, .07);
+	--n-left: max(1.25rem, calc((100% - 1140px) / 2));
+	--n-paper: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .25 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+body { overflow-x: hidden; }
+:focus-visible { outline: 3px solid var(--n-gold-lc); outline-offset: 2px; }
+.wp-site-blocks > main { margin-block-start: 0; }
+.wp-site-blocks > * + * { margin-block-start: 0; }
+
+/* ---------- Inline formats from the toolbar ---------- */
+.nerna-outline { color: transparent; -webkit-text-stroke: 2px currentColor; }
+@supports not (-webkit-text-stroke: 1px #000) { .nerna-outline { color: inherit; opacity: .8; } }
+.nerna-script { font-family: var(--wp--preset--font-family--script); font-weight: 400; color: var(--n-spadblue); font-size: 1.25em; line-height: .8; }
+.nerna-light { font-weight: 300; color: var(--n-sky); }
+.nerna-teal { color: var(--n-teal); }
+.nerna-sample { font-family: var(--wp--preset--font-family--sans); font-size: .66rem; font-weight: 800; color: #6b5100; background: #fff4c9; border: 1px solid #ecd682; padding: .08rem .45rem; border-radius: 6px; vertical-align: middle; letter-spacing: .05em; -webkit-text-stroke: 0; }
+
+/* ---------- Help bar + header ---------- */
+.nerna-helpbar { background: var(--n-ink); color: #fff; font-size: .95rem; }
+.nerna-helpbar a { color: #fff; font-weight: 700; text-decoration: none; }
+.nerna-helpbar a:hover { text-decoration: underline; }
+.nerna-helpbar .nerna-tel a { background: #fff; color: var(--n-blue); padding: .2rem .85rem; border-radius: 999px; }
+@media (max-width: 600px) { .nerna-helpbar .nerna-say { display: none; } }
+.nerna-site-header { position: sticky; top: var(--wp-admin--admin-bar--height, 0px); z-index: 50; }
+.nerna-header { background: #fff; border-bottom: 1px solid var(--n-line); }
+.nerna-helpbar p, .nerna-header p { margin: 0; }
+.nerna-brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; color: var(--n-blue); }
+.nerna-brand img { width: 56px; height: auto; display: block; }
+.nerna-brand b { display: block; font-size: 1.08rem; line-height: 1.12; letter-spacing: -.01em; }
+.nerna-brand span { display: block; font-size: .95rem; line-height: 1.15; }
+.nerna-header .wp-block-navigation a { font-weight: 700; font-size: .95rem; padding: .45rem .7rem; border-radius: 6px; text-decoration: none; }
+.nerna-header .wp-block-navigation a:hover { background: var(--n-pale); }
+.nerna-header .wp-block-navigation .current-menu-item > a,
+.nerna-header .wp-block-navigation a[aria-current="page"] { background: var(--n-blue); color: #fff; }
+.nerna-header .wp-block-navigation__responsive-container.is-menu-open a { font-size: 1.15rem; }
+
+/* ---------- Shared: book headers ---------- */
+[class*="is-style-nerna-"].alignfull { position: relative; overflow: hidden; isolation: isolate; }
+.nerna-inner { position: relative; z-index: 2; }
+.nerna-inner > .is-style-nerna-lead { max-width: 38rem; }
+
+/* BASIC TEXT -------------------------------------------------------------- */
+.is-style-nerna-basic-text {
+	background: var(--n-blue); color: #fff;
+	padding-top: 150px !important; padding-bottom: 3rem !important;
+}
+.is-style-nerna-basic-text::before { /* the white rule */
+	content: ""; position: absolute; left: 0; right: 0; top: 74px; height: 7px; background: #fff; z-index: 1;
+}
+.is-style-nerna-basic-text::after { /* NA logo sitting on the rule */
+	content: ""; position: absolute; z-index: 1; top: 26px; left: var(--n-left);
+	width: 104px; height: 104px; border-radius: 50%;
+	background: var(--n-blue) url(../img/na-logo-white.svg) center / 88px no-repeat;
+}
+.is-style-nerna-basic-text h1, .is-style-nerna-basic-text h2, .is-style-nerna-basic-text h3 { color: #fff; }
+.is-style-nerna-basic-text h1 { font-weight: 800; letter-spacing: -.02em; line-height: 1.04; }
+.is-style-nerna-basic-text .nerna-outline { -webkit-text-stroke-color: #fff; font-weight: 700; }
+.is-style-nerna-basic-text .is-style-nerna-eyebrow { color: #cfe0f6; }
+.is-style-nerna-basic-text .is-style-nerna-lead { color: #dbe7f7; }
+.is-style-nerna-basic-text a:not(.wp-element-button) { color: #fff; }
+.is-style-nerna-basic-text .wp-block-button__link { background: #fff; color: var(--n-blue); }
+.is-style-nerna-basic-text .is-style-outline .wp-block-button__link { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.7); }
+.is-style-nerna-basic-text.nerna-short { padding-top: 132px !important; padding-bottom: 2.2rem !important; }
+
+/* LIVING CLEAN ------------------------------------------------------------ */
+.is-style-nerna-living-clean {
+	background: linear-gradient(180deg, #fff 0%, var(--n-pale) 100%); color: var(--n-lcnavy);
+	padding-top: 3rem !important; padding-bottom: 3rem !important;
+}
+.is-style-nerna-living-clean::before { /* ribbons with the logo ghosted inside, like the cover */
+	content: ""; position: absolute; z-index: 0; right: -40px; top: -20px; width: min(660px, 80vw); height: 360px;
+	background:
+		url(../img/na-logo-blue-faint.svg) 62% 34% / 150px no-repeat,
+		url(../img/lc-ribbons.svg) right top / contain no-repeat;
+}
+.is-style-nerna-living-clean::after { /* "welcome" in many languages + bottom streak */
+	content: ""; position: absolute; z-index: 0; left: 52%; right: 0; bottom: 6px; top: 40%;
+	background: url(../img/lc-words.svg) left top / 900px auto no-repeat;
+	border-bottom: 0;
+}
+.is-style-nerna-living-clean .nerna-inner::after {
+	content: ""; position: absolute; left: -100vw; right: -100vw; bottom: -3rem; height: 6px;
+	background: linear-gradient(90deg, var(--n-orange), var(--n-gold-lc) 45%, var(--n-sky) 70%, var(--n-lcnavy));
+}
+.is-style-nerna-living-clean h1, .is-style-nerna-living-clean h2 { font-family: var(--wp--preset--font-family--josefin); font-weight: 400; color: var(--n-lcnavy); text-transform: uppercase; letter-spacing: .02em; line-height: 1.02; }
+.is-style-nerna-living-clean .nerna-light { display: block; text-transform: none; color: var(--n-sky); font-weight: 300; letter-spacing: 0; }
+.is-style-nerna-living-clean .is-style-nerna-eyebrow { color: var(--n-orange); font-family: var(--wp--preset--font-family--josefin); font-weight: 600; }
+.is-style-nerna-living-clean .is-style-nerna-lead { color: #3c5577; }
+.is-style-nerna-living-clean .wp-block-button__link { background: var(--n-orange); }
+
+/* SPIRITUAL PRINCIPLE A DAY ----------------------------------------------- */
+.is-style-nerna-spiritual, .is-style-nerna-paper {
+	background-color: var(--n-cream); background-image: var(--n-paper); color: var(--n-black);
+}
+.is-style-nerna-spiritual { padding-top: 3rem !important; padding-bottom: 3rem !important; min-height: 330px; }
+.is-style-nerna-spiritual::before {
+	content: ""; position: absolute; z-index: 0; left: 36%; top: 1rem; width: 700px; height: 330px;
+	background: url(../img/spad-words.svg) left top / contain no-repeat;
+}
+.is-style-nerna-spiritual::after { /* the burst, with the NA logo at its center */
+	content: ""; position: absolute; z-index: 1; right: 4%; top: 50%; transform: translateY(-50%);
+	width: min(320px, 46vw); aspect-ratio: 1;
+	background:
+		url(../img/na-logo-ink.svg) center / 26% no-repeat,
+		url(../img/spad-burst.svg) center / contain no-repeat;
+}
+@media (max-width: 700px) { .is-style-nerna-spiritual::after { opacity: .3; right: -60px; } }
+.is-style-nerna-spiritual h1, .is-style-nerna-spiritual h2, .is-style-nerna-paper h2 { font-family: var(--wp--preset--font-family--lora); font-weight: 600; color: var(--n-black); }
+.is-style-nerna-spiritual h1 { max-width: 34rem; }
+.is-style-nerna-spiritual .is-style-nerna-eyebrow { color: var(--n-red); }
+.is-style-nerna-spiritual .is-style-nerna-lead { color: #4a443b; max-width: 33rem; }
+.is-style-nerna-spiritual .wp-block-button__link, .is-style-nerna-paper .wp-block-button__link { background: var(--n-black); }
+.is-style-nerna-paper { padding-top: 2.6rem !important; padding-bottom: 2.6rem !important; }
+
+/* GUIDING PRINCIPLES ------------------------------------------------------ */
+.is-style-nerna-guiding { background: #fff; color: var(--n-navy); padding-top: 3rem !important; padding-bottom: 2.8rem !important; }
+.is-style-nerna-guiding::before { /* fine diagonal lines */
+	content: ""; position: absolute; inset: 0; z-index: 0;
+	background: repeating-linear-gradient(-28deg, rgba(140,198,63,.10) 0 1px, transparent 1px 9px);
+	-webkit-mask-image: linear-gradient(90deg, transparent 30%, #000 70%); mask-image: linear-gradient(90deg, transparent 30%, #000 70%);
+}
+.is-style-nerna-guiding::after { /* overlapping circles with the symbol inside, like the cover */
+	content: ""; position: absolute; z-index: 0; right: -70px; top: -50px; width: min(620px, 85vw); aspect-ratio: 620 / 460;
+	background:
+		url(../img/na-logo-navy-faint.svg) 61.3% 41.3% / 31% no-repeat,
+		url(../img/na-symbol-navy-faint.svg) 61.3% 41.3% / 52% no-repeat,
+		url(../img/gp-circles.svg) center / contain no-repeat;
+}
+.is-style-nerna-guiding h1, .is-style-nerna-guiding h2 { font-family: var(--wp--preset--font-family--oswald); font-weight: 600; text-transform: uppercase; color: var(--n-navy); line-height: .98; letter-spacing: .01em; }
+.is-style-nerna-guiding h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); }
+.is-style-nerna-guiding .nerna-teal { color: var(--n-teal); font-weight: 500; display: block; }
+.is-style-nerna-guiding .wp-block-separator { border: 0; border-top: 3px solid var(--n-teal); width: min(420px, 80%); margin-left: 0; opacity: 1; }
+.is-style-nerna-subtitle, .is-style-nerna-guiding .is-style-nerna-subtitle { font-family: var(--wp--preset--font-family--lora) !important; font-style: italic; font-weight: 500 !important; text-transform: none !important; color: var(--n-sage) !important; font-size: 1.3rem !important; }
+.is-style-nerna-guiding .is-style-nerna-lead { color: #3d4a5e; }
+.is-style-nerna-guiding .wp-block-button__link { background: var(--n-teal); }
+
+/* IT WORKS ---------------------------------------------------------------- */
+.is-style-nerna-it-works {
+	background: linear-gradient(180deg, var(--n-ochre) 0 120px, var(--n-forest) 120px 100%);
+	color: var(--n-goldlite); text-align: center; padding-top: 150px !important; padding-bottom: 3rem !important;
+}
+.is-style-nerna-it-works::after { /* NA logo on the ochre band, like the cover */
+	content: ""; position: absolute; left: 50%; top: 18px; width: 86px; height: 86px; transform: translateX(-50%);
+	background: url(../img/na-logo-green.svg) center / contain no-repeat;
+}
+.is-style-nerna-it-works h1, .is-style-nerna-it-works h2 { font-family: var(--wp--preset--font-family--marcellus); font-weight: 400; color: var(--n-gold); line-height: 1.05; }
+.is-style-nerna-it-works .is-style-nerna-lead,
+.is-style-nerna-it-works p { font-family: var(--wp--preset--font-family--marcellus); color: var(--n-goldlite); margin-left: auto; margin-right: auto; max-width: 38rem; }
+.is-style-nerna-it-works .is-style-nerna-eyebrow { color: var(--n-gold); }
+.is-style-nerna-it-works .wp-block-button__link { background: var(--n-gold); color: #1d1406; }
+
+/* ---------- Small text styles ---------- */
+.is-style-nerna-eyebrow { font-size: .78rem !important; letter-spacing: .16em; text-transform: uppercase; font-weight: 800; color: var(--n-blue); margin-bottom: .2rem; }
+.is-style-nerna-lead { font-size: 1.15rem !important; color: var(--n-muted); }
+.is-style-nerna-note { background: var(--n-pale); border-left: 4px solid var(--n-sky); padding: .9rem 1.1rem; border-radius: 8px; font-size: .95rem; }
+.is-style-nerna-arrow a { font-weight: 700; text-decoration: none; }
+.is-style-nerna-arrow a::after { content: " →"; }
+.is-style-nerna-arrow a:hover { text-decoration: underline; }
+
+/* ---------- Cards ---------- */
+[class*="is-style-nerna-card"] {
+	background: #fff; border: 1px solid var(--n-line); border-radius: var(--n-r); padding: 1.25rem !important; box-shadow: var(--n-shadow);
+}
+[class*="is-style-nerna-card"] > * { margin-block-start: 0; }
+[class*="is-style-nerna-card"] > * + * { margin-block-start: .55rem; }
+[class*="is-style-nerna-card"] p { color: var(--n-muted); }
+[class*="is-style-nerna-card"] p a { font-weight: 700; }
+.is-style-nerna-card-blue { border-top: 6px solid var(--n-blue); }
+.is-style-nerna-card-gold { border-top: 6px solid var(--n-ochre); }
+.is-style-nerna-card-gold h3, .is-style-nerna-card-gold h2 { font-family: var(--wp--preset--font-family--marcellus); font-weight: 400; color: var(--n-forest); font-size: 1.3rem; }
+.is-style-nerna-card-gold .is-style-nerna-eyebrow { font-family: var(--wp--preset--font-family--marcellus); color: var(--n-ochre); letter-spacing: .06em; font-weight: 400; }
+.is-style-nerna-card-gold a { color: var(--n-forest); }
+.is-style-nerna-card-gold .wp-block-button__link { background: var(--n-gold); color: #1d1406; }
+.is-style-nerna-card-teal { border-top: 4px solid var(--n-teal); }
+.is-style-nerna-card-teal h3, .is-style-nerna-card-teal h2 { font-family: var(--wp--preset--font-family--oswald); font-weight: 500; text-transform: uppercase; letter-spacing: .02em; color: var(--n-navy); font-size: 1.2rem; }
+.is-style-nerna-card-teal a { color: #0f7f90; }
+.is-style-nerna-card-teal .wp-block-button__link { background: var(--n-teal); color: #fff; }
+.is-style-nerna-card-cream { background: #fffdf8; border-color: #e9dfca; }
+.is-style-nerna-card-cream h3 { font-family: var(--wp--preset--font-family--lora); }
+
+.is-style-nerna-callout { background: linear-gradient(120deg, #fff, var(--n-pale)); border: 1px solid #d6e5f4; border-radius: var(--n-r); padding: 1.3rem 1.4rem !important; }
+
+/* ---------- Big links on the home page ---------- */
+[class*="is-style-nerna-door-"] { border-radius: var(--n-r); padding: 1.4rem !important; position: relative; overflow: hidden; box-shadow: var(--n-shadow); min-height: 250px; transition: transform .14s; }
+[class*="is-style-nerna-door-"]:hover { transform: translateY(-3px); }
+[class*="is-style-nerna-door-"] > * { position: relative; margin-block-start: 0; }
+[class*="is-style-nerna-door-"] > * + * { margin-block-start: .5rem; }
+[class*="is-style-nerna-door-"] h3 { font-size: 1.35rem; }
+[class*="is-style-nerna-door-"] .is-style-nerna-arrow { margin-top: 1.2rem; }
+.is-style-nerna-door-lc { background: linear-gradient(160deg, #fff, var(--n-pale)); color: var(--n-lcnavy); border: 1px solid #d6e5f4; }
+.is-style-nerna-door-lc::before { content: ""; position: absolute; right: -24px; bottom: -30px; width: 210px; height: 120px; background: url(../img/lc-ribbons.svg) right bottom / contain no-repeat; transform: scaleY(-1); opacity: .9; }
+.is-style-nerna-door-lc h3 { font-family: var(--wp--preset--font-family--josefin); font-weight: 400; color: var(--n-lcnavy); }
+.is-style-nerna-door-lc p { color: #43597a; }
+.is-style-nerna-door-lc a { color: var(--n-lcnavy); }
+.is-style-nerna-door-lc .is-style-nerna-eyebrow { color: var(--n-orange); }
+.is-style-nerna-door-iw { background: linear-gradient(180deg, var(--n-ochre) 0 64px, var(--n-forest) 64px); color: var(--n-goldlite); padding-top: 84px !important; }
+.is-style-nerna-door-iw::before { content: ""; position: absolute; top: 10px; right: 16px; width: 44px; height: 44px; background: url(../img/na-logo-green.svg) center / contain no-repeat; }
+.is-style-nerna-door-iw h3 { font-family: var(--wp--preset--font-family--marcellus); font-weight: 400; color: var(--n-gold); }
+.is-style-nerna-door-iw p { color: #d9c79f; }
+.is-style-nerna-door-iw a { color: var(--n-goldlite); }
+.is-style-nerna-door-iw .is-style-nerna-eyebrow { position: absolute !important; top: 1.1rem; left: 1.4rem; color: #1d1406; }
+.is-style-nerna-door-gp { background: #fff; color: var(--n-navy); border: 1px solid #d5ebee; }
+.is-style-nerna-door-gp::before { content: ""; position: absolute; right: -60px; bottom: -70px; width: 250px; aspect-ratio: 620/460; background: url(../img/na-symbol-navy-faint.svg) 61% 41% / 50% no-repeat, url(../img/gp-circles.svg) center / contain no-repeat; }
+.is-style-nerna-door-gp h3 { font-family: var(--wp--preset--font-family--oswald); font-weight: 500; text-transform: uppercase; letter-spacing: .02em; font-size: 1.45rem; color: var(--n-navy); }
+.is-style-nerna-door-gp p { color: #4b5a6e; }
+.is-style-nerna-door-gp a { color: #0f7f90; }
+.is-style-nerna-door-gp .is-style-nerna-eyebrow { color: var(--n-teal); }
+
+/* ---------- Events ---------- */
+.is-style-nerna-event { background: #fffdf8; border: 1px solid #e9dfca; border-radius: var(--n-r); padding: 1.1rem !important; box-shadow: var(--n-shadow); gap: 1rem !important; }
+.is-style-nerna-event h3 { font-family: var(--wp--preset--font-family--lora); font-size: 1.1rem; margin: 0; }
+.is-style-nerna-event p { margin: .2rem 0 0; color: var(--n-muted); }
+.is-style-nerna-date {
+	flex: none; width: 64px; margin: 0 !important; text-align: center; line-height: 1.05; border-radius: 10px; padding: .45rem 0 !important;
+	background: var(--n-red); color: #fff !important; font-size: .7rem !important; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+}
+.is-style-nerna-date strong { display: block; font-family: var(--wp--preset--font-family--lora); font-size: 1.5rem; letter-spacing: 0; }
+.nerna-service .is-style-nerna-date { background: #2f6f8a; }
+.nerna-learning .is-style-nerna-date { background: #b8861c; }
+
+/* ---------- Accordions (Service library) ---------- */
+.wp-block-details { background: #fff; border: 1px solid #d5ebee; border-left: 4px solid var(--n-teal); border-radius: 10px; padding: .85rem 1.1rem; }
+.wp-block-details summary { font-family: var(--wp--preset--font-family--oswald); font-weight: 500; text-transform: uppercase; letter-spacing: .04em; color: var(--n-navy); font-size: 1.1rem; cursor: pointer; }
+.wp-block-details[open] summary { margin-bottom: .6rem; }
+
+/* ---------- Page body headings by book ---------- */
+.nerna-body-lc h2 { font-family: var(--wp--preset--font-family--josefin); font-weight: 400; color: var(--n-lcnavy); font-size: 1.75rem; }
+.nerna-body-iw h2 { font-family: var(--wp--preset--font-family--marcellus); font-weight: 400; color: var(--n-forest); }
+.nerna-body-gp h2 { font-family: var(--wp--preset--font-family--oswald); font-weight: 500; text-transform: uppercase; color: var(--n-navy); }
+.nerna-body-spad h2 { font-family: var(--wp--preset--font-family--lora); }
+.nerna-section { padding-top: 2.4rem !important; padding-bottom: 3.2rem !important; }
+
+/* Numbered steps (Living Clean) */
+ol.nerna-steps { list-style: none; padding: 0; counter-reset: s; display: grid; gap: .75rem; }
+ol.nerna-steps li { counter-increment: s; background: #fff; border: 1px solid #d6e5f4; border-radius: var(--n-r); padding: 1rem 1rem 1rem 3.7rem; position: relative; }
+ol.nerna-steps li::before { content: counter(s); position: absolute; left: 1rem; top: .85rem; width: 1.95rem; height: 1.95rem; border-radius: 50%; background: linear-gradient(135deg, var(--n-sky), var(--n-lcnavy)); color: #fff; font-family: var(--wp--preset--font-family--josefin); font-weight: 600; display: grid; place-items: center; }
+
+/* Demo form controls inside HTML blocks */
+.nerna-form label { display: block; font-size: .88rem; font-weight: 700; margin: .2rem 0 .25rem; }
+.nerna-form input, .nerna-form select, .nerna-form textarea { width: 100%; font: inherit; padding: .65rem .75rem; border: 1px solid #c6cfdb; border-radius: 8px; background: #fff; margin-bottom: .8rem; box-sizing: border-box; }
+.nerna-form button { background: var(--n-blue); color: #fff; border: 0; border-radius: 8px; padding: .7rem 1.2rem; font: inherit; font-weight: 700; cursor: pointer; }
+
+/* ---------- Footer ---------- */
+.nerna-footer { background: var(--n-ink); color: #c9d7ea; font-size: .95rem; position: relative; }
+.nerna-footer::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: #fff; box-shadow: 0 -10px 0 var(--n-blue); }
+.nerna-footer a { color: #fff; }
+.nerna-footer h2, .nerna-footer h3 { color: #fff; font-size: 1rem; }
+.nerna-footer .nerna-fineprint { border-top: 1px solid rgba(255,255,255,.14); padding-top: 1rem; font-size: .82rem; color: #98aecb; }
+.nerna-footer .nerna-footlogo img { background: #fff; border-radius: 50%; padding: 6px; width: 72px; }
+.nerna-footer .wp-block-button__link { background: #fff; color: var(--n-blue); }
+.nerna-footer ul { list-style: none; padding: 0; }
+
+/* ---------- Layout helpers ---------- */
+.nerna-main { margin: 0; }
+.nerna-helpbar { padding-top: .4rem !important; padding-bottom: .4rem !important; }
+.nerna-header { padding-top: .6rem !important; padding-bottom: .6rem !important; }
+.nerna-footer { padding-top: 2.8rem !important; padding-bottom: 1.4rem !important; }
+/* Grids fill the row instead of leaving empty columns */
+.wp-block-group.nerna-grid { --n-min: 16rem; }
+.wp-block-group.nerna-grid-wide { --n-min: 20rem; }
+.wp-block-group.nerna-grid-small { --n-min: 13rem; }
+.wp-block-group.is-layout-grid[class*="nerna-grid"] { grid-template-columns: repeat(auto-fit, minmax(min(var(--n-min), 100%), 1fr)) !important; }
+
+/* Book headers and full-width bands sit flush against each other */
+.wp-block-post-content > .alignfull { margin-block-start: 0 !important; }
+.wp-block-post-content > .alignfull + :not(.alignfull) { margin-block-start: 0; }
+/* Side padding for full-width headers and bands on small screens */
+[class*="is-style-nerna-"].alignfull, .nerna-helpbar, .nerna-header, .nerna-footer { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+@media (max-width: 600px) {
+	.is-style-nerna-basic-text::after { width: 84px; height: 84px; background-size: 70px; top: 30px; }
+	.is-style-nerna-basic-text, .is-style-nerna-basic-text.nerna-short { padding-top: 132px !important; }
+}
