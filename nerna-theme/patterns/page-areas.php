@@ -17,7 +17,7 @@
 <p class="has-x-large-font-size">of the New England Region</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"is-style-nerna-lead"} -->
-<p class="is-style-nerna-lead">Eleven area service committees, each serving the groups in its part of the region</p>
+<p class="is-style-nerna-lead">Ten area service committees, each serving the groups in its part of the region</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -110,33 +110,16 @@
 <!-- /wp:group -->
 <!-- wp:group {"className":"is-style-nerna-card-gold","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-nerna-card-gold"><!-- wp:paragraph {"className":"is-style-nerna-eyebrow"} -->
-<p class="is-style-nerna-eyebrow">MWA</p>
-<!-- /wp:paragraph -->
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Metro West</h3>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><strong>Serves:</strong> West of Boston<br><strong>Area service meeting:</strong> 1st Tuesday, 7:30 pm · 421 Common St (enter on Palfrey Rd), Belmont</p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph -->
-<p><a href="https://nerna.org/metro-west/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
-<!-- /wp:paragraph -->
-<!-- wp:paragraph {"className":"has-small-font-size"} -->
-<p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-<!-- wp:group {"className":"is-style-nerna-card-gold","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-nerna-card-gold"><!-- wp:paragraph {"className":"is-style-nerna-eyebrow"} -->
 <p class="is-style-nerna-eyebrow">NIA</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Nantucket Island</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p><strong>Serves:</strong> Nantucket<br><strong>Area mailing address:</strong> Nantucket Island ASC, PO Box 2963, Nantucket, MA 02584</p>
+<p><strong>Serves:</strong> Nantucket · online meetings only<br><strong>Area mailing address:</strong> Nantucket Island ASC, PO Box 2963, Nantucket, MA 02584</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/nantucket/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="https://nerna.org/nantucket/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/online-meetings/">Online meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>

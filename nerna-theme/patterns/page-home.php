@@ -139,7 +139,7 @@
 <div class="wp-block-group nerna-section"><!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":"20rem"},"className":"nerna-grid-wide"} -->
 <div class="wp-block-group nerna-grid-wide"><!-- wp:group {"className":"is-style-nerna-card-gold","layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-nerna-card-gold"><!-- wp:paragraph {"className":"is-style-nerna-eyebrow"} -->
-<p class="is-style-nerna-eyebrow">Eleven areas</p>
+<p class="is-style-nerna-eyebrow">Ten areas</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Find your local area</h3>
