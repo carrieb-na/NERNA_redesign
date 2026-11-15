@@ -85,7 +85,7 @@
 <p><strong>Serves:</strong> Rhode Island and nearby Massachusetts towns<br><strong>Area service meeting:</strong> 4th Sunday, 3:30 pm · Beneficent Congregational Church, 300 Weybosset St, Providence</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/?current-meeting-list=6" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="https://www.gpana.org/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="https://www.gpana.org/?current-meeting-list=1" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="https://www.gpana.org/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
@@ -102,7 +102,7 @@
 <p><strong>Serves:</strong> Martha&#8217;s Vineyard<br><strong>Area service meeting:</strong> Last Monday, 8:15 pm · Catholic Parish Hall, 55 School St, Oak Bluffs<br><strong>Helpline:</strong> 1-866-686-2669</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/?current-meeting-list=8" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="https://www.mvana.org/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="https://nerna.org/?current-meeting-list=6" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="https://www.mvana.org/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
@@ -119,7 +119,7 @@
 <p><strong>Serves:</strong> West of Boston<br><strong>Area service meeting:</strong> 1st Tuesday, 7:30 pm · 421 Common St (enter on Palfrey Rd), Belmont</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/?current-meeting-list=9" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="https://nerna.org/metro-west/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="https://nerna.org/metro-west/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
@@ -136,7 +136,7 @@
 <p><strong>Serves:</strong> Nantucket<br><strong>Area mailing address:</strong> Nantucket Island ASC, PO Box 2963, Nantucket, MA 02584</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/?current-meeting-list=10" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="https://nerna.org/nantucket/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="https://nerna.org/nantucket/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
@@ -153,7 +153,7 @@
 <p><strong>Serves:</strong> North of Boston and the Merrimack Valley<br><strong>Area service meeting:</strong> Last Sunday, 3:00 pm · 33 Spring St, Lynn</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/?current-meeting-list=11" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="https://nerna.org/north-east-massachusetts/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="https://nerna.org/north-east-massachusetts/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
@@ -170,7 +170,7 @@
 <p><strong>Serves:</strong> Southeastern Massachusetts<br><strong>Area service meeting:</strong> 3rd Sunday, 12:15 pm · UMass Dartmouth, MacLean Campus Center, 285 Old Westport Rd, North Dartmouth</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/?current-meeting-list=13" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="https://semana.us/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="https://semana.us/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
@@ -187,7 +187,7 @@
 <p><strong>Serves:</strong> The South Shore<br><strong>Area service meeting:</strong> 1st Sunday, 2:30 pm · First Congregational Church, 639 High St, Hanson</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/?current-meeting-list=14" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="https://nerna.org/south-shore/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="https://nerna.org/south-shore/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
@@ -204,7 +204,7 @@
 <p><strong>Serves:</strong> Western Massachusetts<br><strong>Area service meeting:</strong> 1st Monday, 7:00 pm · South Congregational Church, 45 Maple St, Springfield</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph -->
-<p><a href="https://nerna.org/?current-meeting-list=15" target="_blank" rel="noreferrer noopener">Printable meeting list (PDF)</a><br><a href="http://www.wmacna.org/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
+<p><a href="http://www.wmacna.org/" target="_blank" rel="noreferrer noopener">Area website</a><br><a href="/meetings/">Meetings</a></p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"className":"has-small-font-size"} -->
 <p class="has-small-font-size">Last checked: <span class="nerna-sample">SAMPLE</span></p>
