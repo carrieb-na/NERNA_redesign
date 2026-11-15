@@ -101,16 +101,62 @@ function nerna_current_view() {
 	return isset( $_GET['view'] ) ? sanitize_key( wp_unslash( $_GET['view'] ) ) : '';
 }
 
-add_filter( 'pre_render_block', function ( $pre, $block ) {
+/** True when a block belongs to a view that is not the one being shown. */
+function nerna_is_hidden_view( $block ) {
 	$class = isset( $block['attrs']['className'] ) ? $block['attrs']['className'] : '';
 	if ( ! preg_match( '/\bnerna-view-(?!default\b)([a-z0-9-]+)/', $class, $m ) ) {
-		return $pre;
+		return false;
 	}
 	$view       = nerna_current_view();
 	$is_default = (bool) preg_match( '/\bnerna-view-default\b/', $class );
 	$show       = '' === $view ? $is_default : ( $view === $m[1] );
-	return $show ? $pre : '';
+	return ! $show;
+}
+
+add_filter( 'pre_render_block', function ( $pre, $block ) {
+	return nerna_is_hidden_view( $block ) ? '' : $pre;
 }, 10, 2 );
+
+/** Remove hidden views from a list of blocks (and their inner blocks). */
+function nerna_strip_hidden_views( $blocks ) {
+	$out = array();
+	foreach ( $blocks as $block ) {
+		if ( nerna_is_hidden_view( $block ) ) {
+			continue;
+		}
+		if ( ! empty( $block['innerBlocks'] ) ) {
+			$kept  = nerna_strip_hidden_views( $block['innerBlocks'] );
+			$index = 0;
+			$inner = array();
+			// Rebuild innerContent so removed inner blocks leave no placeholders.
+			foreach ( $block['innerContent'] as $chunk ) {
+				if ( null === $chunk ) {
+					$original = $block['innerBlocks'][ $index++ ];
+					if ( ! nerna_is_hidden_view( $original ) ) {
+						$inner[] = null;
+					}
+				} else {
+					$inner[] = $chunk;
+				}
+			}
+			$block['innerBlocks']  = $kept;
+			$block['innerContent'] = $inner;
+		}
+		$out[] = $block;
+	}
+	return $out;
+}
+
+/*
+ * The meeting search plugin (crouton) reads the page's saved content to find its
+ * settings and uses the first meeting list it sees. Hand it only the chosen view.
+ */
+add_filter( 'Crouton_post_content', function ( $content ) {
+	if ( false === strpos( $content, 'nerna-view-' ) ) {
+		return $content;
+	}
+	return serialize_blocks( nerna_strip_hidden_views( parse_blocks( $content ) ) );
+} );
 
 add_filter( 'render_block', function ( $content, $block ) {
 	$class = isset( $block['attrs']['className'] ) ? $block['attrs']['className'] : '';
