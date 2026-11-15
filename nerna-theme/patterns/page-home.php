@@ -24,7 +24,7 @@
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/meetings/">Find a meeting</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/meetings/">Online meetings</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/online-meetings/">Online meetings</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/new-to-na/">Your first meeting</a></div>

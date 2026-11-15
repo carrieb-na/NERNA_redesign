@@ -30,6 +30,7 @@ function nerna_demo_setup() {
 	$pages = array(
 		'home'               => array( 'Home', 'page-home' ),
 		'meetings'           => array( 'Meetings', 'page-meetings' ),
+		'online-meetings'    => array( 'Online Meetings', 'page-online-meetings' ),
 		'new-to-na'          => array( 'New to NA', 'page-new-to-na' ),
 		'events'             => array( 'Events', 'page-events' ),
 		'areas'              => array( 'Areas', 'page-areas' ),

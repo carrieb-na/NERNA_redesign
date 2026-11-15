@@ -28,7 +28,13 @@
 <h3 class="wp-block-heading">Online meetings</h3>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p>Join from anywhere by video or phone. Choose &#8220;Online&#8221; in the search below.</p>
+<p>Join from anywhere by video or phone.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
+<p class="is-style-nerna-arrow"><a href="/online-meetings/">Online meetings in our region</a></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"is-style-nerna-arrow"} -->
+<p class="is-style-nerna-arrow"><a href="https://virtual-na.org/">Online NA meetings worldwide</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 <!-- wp:group {"className":"is-style-nerna-card","layout":{"type":"default"}} -->
